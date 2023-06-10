@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '../../api/auth/[...nextauth]/route';
-import { notFound, redirect } from "next/navigation";
+import { redirect } from "next/navigation";
 import prisma from '@/lib/db';
 
 // components
@@ -27,7 +27,7 @@ const Dashboard = async () => {
 
   return (
     <div className='max-w-7xl mx-auto mt-16'>
-      {apiKey ? <ApiDashboard /> : <RequestApiKey />}
+      {apiKey ? ( <ApiDashboard /> ) : ( <RequestApiKey /> )}
     </div>
   )
 }

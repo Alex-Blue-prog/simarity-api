@@ -5,7 +5,7 @@ import { authOptions } from "../../auth/[...nextauth]/route";
 import { nanoid } from "nanoid";
 import { z } from "zod";
 
-export async function POST(req: Request) {
+export async function GET() {
     try {
 
         const session = await getServerSession(authOptions);
