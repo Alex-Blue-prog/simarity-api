@@ -1,10 +1,11 @@
-import Navbar from '@/components/Navbar'
+import '@/styles/globals.css'
+import { Inter } from 'next/font/google'
 import Providers from '@/components/Providers'
 import { cn } from '@/lib/utils'
-import '@/styles/globals.css'
-
-import { Inter } from 'next/font/google'
 import { Toaster } from '@/components/ui/Toast';
+import Navbar from '@/components/Navbar'
+import MobileMenu from '@/components/MobilieMenu'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({
@@ -17,8 +18,9 @@ export default function RootLayout({
         <body className={'min-h-screen bg-slate-50 dark:bg-slate-900 antialiased'}>
           <Providers>
             <Toaster position='bottom-right' />
-            {/* @ts-expect-error Server Component */}
+            
             <Navbar />
+            <MobileMenu />
             {children}
 
             {/* Allow more height on mobile devices */}

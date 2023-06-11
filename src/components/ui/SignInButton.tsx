@@ -20,7 +20,7 @@ const SignInButton: FC<SignInButtonProps> = ({}) => {
     try {
       setIsLoading(true)
       
-      await signIn('google');
+      await signIn('google', {callbackUrl: "/dashboard"});
 
     } catch (error) {
       toast({

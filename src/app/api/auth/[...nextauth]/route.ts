@@ -50,10 +50,9 @@ export const authOptions: NextAuthOptions = {
             
             // return {...token, ...user};
         },
-        redirect() {
-            
-            return "/dashboard"
-        },
+        // redirect() {
+        //     return "/dashboard"
+        // },
     },
     secret: process.env.NEXTAUTH_SECRET,
     session: {
