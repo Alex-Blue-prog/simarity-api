@@ -5,12 +5,12 @@ import Link from 'next/link'
 import LargeHeading from '@/components/ui/LargeHeading'
 import Paragraph from '@/components/ui/Paragraph'
 
-import type { Metadata } from 'next'
+// import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Similarity API | Home',
-  description: 'Free & open-source text similarity API',
-}
+// export const metadata: Metadata = {
+//   title: 'Similarity API | Home',
+//   description: 'Free & open-source text similarity API',
+// }
 
 export default function Home() {
   

@@ -8,6 +8,14 @@ import MobileMenu from '@/components/MobilieMenu'
 
 const inter = Inter({ subsets: ['latin'] })
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Similarity API | Home',
+  description: 'Free & open-source text similarity API',
+}
+
+
 export default function RootLayout({
   children,
 }: {
